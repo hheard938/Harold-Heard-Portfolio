@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Harold Heard | Cloud & Cybersecurity Portfolio</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+<h1>Harold C. Heard III</h1>
+<p>AWS Cloud • IT Support • Cybersecurity (Early Career)</p>
+</header>
+<main>
+<section class="section">
+<h2>Overview</h2>
+<p>
+       Welcome to my cloud and cybersecurity portfolio. This site is hosted on
+       an Apache web server running on an Amazon Linux EC2 instance. It includes my
+       resume and hands-on projects demonstrating AWS, Linux, security, and IT skills.
+</p>
+<div class="button-row">
+<a class="btn btn-primary" href="HAROLD_HEARDresume.pdf" target="_blank">View Resume</a>
+<a class="btn btn-outline" href="https://github.com/hheard358/Harold-Heard-Portfolio" target="_blank">GitHub Repository</a>
+</div>
+</section>
+<section class="section">
+<h2>Featured Project: AWS EC2 Apache Web Server</h2>
+<p>
+       I deployed this website on AWS EC2 using the Apache HTTP server. I configured
+       the instance, installed Apache, set permissions, and integrated this website with GitHub.
+</p>
+<ul>
+<li>Amazon EC2 (Amazon Linux 2023)</li>
+<li>Apache (httpd) web server</li>
+<li>Linux CLI administration</li>
+<li>Security Groups (HTTP + SSH)</li>
+<li>GitHub version control</li>
+</ul>
+<div class="button-row">
+<a class="btn btn-outline" href="apacheREADME.md" target="_blank">Project Details</a>
+</div>
+</section>
+</main>
+<footer>
+   © <span id="year"></span> Harold C. Heard III • Hosted on AWS EC2 & Apache
+</footer>
+<script>
+   document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
