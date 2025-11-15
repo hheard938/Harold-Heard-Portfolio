@@ -29,3 +29,10 @@ yum install -y httpd
 systemctl start httpd
 systemctl enable httpd
 echo "<h1>Hello from Harold Heard – AWS Apache Project</h1>" > /var/www/html/index.html
+## 📸 Screenshots (Coming Soon)
+I will be adding screenshots in the next update, including:
+- EC2 Instance dashboard
+- Security Group inbound rules
+- Apache service running (systemctl status)
+- Browser showing the website live
+- User Data script results
