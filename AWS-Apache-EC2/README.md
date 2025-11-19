@@ -1,3 +1,15 @@
+# AWS Apache EC2 Web Server Project
+## 📌 Overview
+This project demonstrates how to deploy and host a live website using an **Apache web server** running on an **Amazon Linux EC2 instance**.  
+The instance hosts my cloud portfolio website and syncs with GitHub for source control.
+This project showcases:
+- EC2 provisioning and configuration  
+- Apache installation and automation  
+- Linux server administration  
+- Security Group management  
+- Hosting a public website via IPv4  
+- GitHub-based website deployment  
+---
 ## 🧩 Architecture (Mermaid Diagram)
 ```mermaid
 flowchart LR
