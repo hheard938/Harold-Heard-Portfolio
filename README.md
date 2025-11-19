@@ -111,4 +111,4 @@ Harold-Heard-Portfolio/
 │
 ├── index.html             # Homepage served via Apache (for EC2 deployment)
 ├── style.css              # Stylesheet for portfolio homepage
-└── README.md              # (You are here) main portfolio overview 
+└── README.md              # (You are here) main portfolio overview
