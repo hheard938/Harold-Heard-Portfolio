@@ -1,60 +1,46 @@
 # AWS Apache EC2 Web Server Project
+
 ## 📌 Overview
+
 This project demonstrates how to deploy, configure, and host a live website using an **Apache web server** running on an **Amazon Linux EC2 instance**.  
+
 The EC2 instance hosts my personal cloud portfolio website and is fully integrated with GitHub for version control.
+
 This project showcases:
+
 - Amazon EC2 provisioning
+
 - Apache web server installation & automation
+
 - Linux administration (Amazon Linux 2023)
+
 - User Data scripting
+
 - Security Groups (HTTP + SSH)
+
 - Public IP hosting
+
 - GitHub workflow for website files
----
-## 🧩 Architecture
-**Flow Explanation:**
-
-1. A t3.micro EC2 instance was created in us-east-2  
-
-2. Apache was automatically installed via a user data script  
-
-3. Security Groups allowed:
-
-   - HTTP (80) — for website traffic  
-
-   - SSH (22) — for admin access  
-
-4. Website files were uploaded to GitHub and pulled to the server  
-
-5. The public IPv4 address serves the live site
 
 ---
 
-## 🚀 Live Website
+## 🧩 Architecture (Mermaid Diagram)
 
-**Public IPv4:**  
+```mermaid
 
-`http://18.222.80.161`  
+flowchart LR
 
-(Website served directly from your EC2 Apache server)
+    A[User Laptop / Browser] -->|HTTP| B[EC2 Public IPv4]
 
----
+    B --> C[EC2 Instance<br/>Amazon Linux 2023]
 
-## 🛠️ User Data Script
+    C --> D[Apache HTTP Server (httpd)]
 
-```bash
+    D --> E[/var/www/html<br/>Portfolio Website Files]
 
-#!/bin/bash
+    C --> F[Security Group<br/>Inbound: HTTP 80, SSH 22]
 
-sudo yum update -y
+    G[GitHub Repository] <-->|git push / pull| A
 
-sudo yum install httpd -y
-
-sudo systemctl start httpd
-
-sudo systemctl enable httpd
-
-cd /var/www/html
-
-sudo echo "<h1>Harold Heard – AWS Cloud Portfolio</h1>" > index.html
- 
+    G --> E
+  
