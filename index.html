@@ -2,51 +2,108 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Harold Heard | Cloud & Cybersecurity Portfolio</title>
+<title>Harold C. Heard III | AWS Cloud Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
+<header class="site-header">
+<div class="container header-content">
+<div>
 <h1>Harold C. Heard III</h1>
-<p>AWS Cloud • IT Support • Cybersecurity (Early Career)</p>
+<p class="tagline">AWS Cloud · IT Support · Cybersecurity (Early Career)</p>
+</div>
+<nav class="header-links">
+<a href="resume/HAROLD-HEARDresume2.pdf" target="_blank">Resume</a>
+<a href="https://github.com/hheard938/Harold-Heard-Portfolio" target="_blank">GitHub</a>
+</nav>
+</div>
 </header>
-<main>
-<section class="section">
+<main class="container">
+<!-- Overview -->
+<section class="card">
 <h2>Overview</h2>
 <p>
-       Welcome to my cloud and cybersecurity portfolio. This site is hosted on
-       an Apache web server running on an Amazon Linux EC2 instance. It includes my
-       resume and hands-on projects demonstrating AWS, Linux, security, and IT skills.
+
+        Welcome to my cloud and cybersecurity portfolio. This site is hosted on an
+<strong>AWS EC2 instance</strong> running the <strong>Apache HTTP server</strong>.
+
+        Here you’ll find my resume and hands-on projects that highlight my skills
+
+        in AWS, Linux, security, and IT support.
 </p>
 <div class="button-row">
-<a class="btn btn-primary" href="HAROLD_HEARDresume.pdf" target="_blank">View Resume</a>
-<a class="btn btn-outline" href="https://github.com/hheard358/Harold-Heard-Portfolio" target="_blank">GitHub Repository</a>
+<a class="btn primary" href="resume/HAROLD-HEARDresume2.pdf" target="_blank">View Resume</a>
+<a class="btn secondary" href="https://github.com/hheard938/Harold-Heard-Portfolio" target="_blank">GitHub Repository</a>
 </div>
 </section>
-<section class="section">
+<!-- Featured Project -->
+<section class="card">
 <h2>Featured Project: AWS EC2 Apache Web Server</h2>
 <p>
-       I deployed this website on AWS EC2 using the Apache HTTP server. I configured
-       the instance, installed Apache, set permissions, and integrated this website with GitHub.
+
+        I deployed this website on an <strong>AWS EC2</strong> instance using the
+<strong>Apache HTTP server</strong>. I configured the instance, installed Apache,
+
+        set permissions, and integrated the site with GitHub for version control.
 </p>
-<ul>
+<ul class="pill-list">
 <li>Amazon EC2 (Amazon Linux 2023)</li>
 <li>Apache (httpd) web server</li>
 <li>Linux CLI administration</li>
 <li>Security Groups (HTTP + SSH)</li>
-<li>GitHub version control</li>
+<li>Git &amp; GitHub workflow</li>
 </ul>
 <div class="button-row">
-<a class="btn btn-outline" href="apacheREADME.md" target="_blank">Project Details</a>
+<a class="btn outline" href="AWS-Apache-EC2/README.md" target="_blank">Project Details</a>
+</div>
+</section>
+<!-- Skills Summary -->
+<section class="card">
+<h2>Skills Snapshot</h2>
+<div class="skills-grid">
+<div>
+<h3>AWS Cloud</h3>
+<ul>
+<li>EC2 provisioning &amp; hardening</li>
+<li>Security Groups &amp; networking basics</li>
+<li>User Data automation</li>
+</ul>
+</div>
+<div>
+<h3>Systems &amp; Support</h3>
+<ul>
+<li>Linux command line</li>
+<li>OS &amp; application troubleshooting</li>
+<li>End-user support</li>
+</ul>
+</div>
+<div>
+<h3>Cybersecurity</h3>
+<ul>
+<li>SSH &amp; secure remote access</li>
+<li>Least-privilege mindset</li>
+<li>Basic hardening practices</li>
+</ul>
+</div>
 </div>
 </section>
 </main>
-<footer>
-   © <span id="year"></span> Harold C. Heard III • Hosted on AWS EC2 & Apache
+<footer class="site-footer">
+<div class="container footer-content">
+<p>© 2025 Harold C. Heard III · Hosted on AWS EC2 &amp; Apache</p>
+<p>
+
+        Contact:
+<a href="mailto:harold.heard72@gmail.com">harold.heard72@gmail.com</a>
+
+        ·
+<span>District Heights, MD</span>
+</p>
+</div>
 </footer>
-<script>
-   document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
+GitHub - hheard938/Harold-Heard-Portfolio: AWS Cloud Projects Portfolio
+AWS Cloud Projects Portfolio. Contribute to hheard938/Harold-Heard-Portfolio development by creating an account on GitHub.
+ 
