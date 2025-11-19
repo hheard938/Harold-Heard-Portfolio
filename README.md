@@ -101,4 +101,14 @@ This project hosts my live portfolio website using Apache on an EC2 instance.
 ---
 
 # 📌 Project Structure
- 
+Harold-Heard-Portfolio/
+│
+├── AWS-Apache-EC2/        # Main cloud project (EC2 + Apache + website)
+│   ├── screenshots/
+│   └── README.md
+│
+├── resume/                # Copy of my professional resume
+│
+├── index.html             # Homepage served via Apache (for EC2 deployment)
+├── style.css              # Stylesheet for portfolio homepage
+└── README.md              # (You are here) main portfolio overview 
