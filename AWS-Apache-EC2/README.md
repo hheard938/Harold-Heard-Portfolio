@@ -20,10 +20,4 @@ flowchart LR
    C --> F["Security Group<br/>Inbound: HTTP 80, SSH 22"]
    G["GitHub Repository"] <-->|git push / pull| A
    G --> E
-  #!/bin/bash
-sudo yum update -y
-sudo yum install httpd -y
-sudo systemctl start httpd
-sudo systemctl enable httpd
-cd /var/www/html
-sudo echo "<h1>Harold Heard – AWS Cloud Portfolio</h1>" > index.html
+  
